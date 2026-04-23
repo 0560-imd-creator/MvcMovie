@@ -3,8 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
 using MvcMovie.Models;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<MvcMovieContext>(options =>
-    options.UseSqlite("Data Source=movies.db"));
+// builder.Services.AddDbContext<MvcMovieContext>(options =>
+   // options.UseSqlite("Data Source=movies.db"));
 
 // Add services to the container.
 builder.Services.AddValidation();
